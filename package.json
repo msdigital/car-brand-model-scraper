@@ -1,7 +1,7 @@
 {
-  "name": "car-make-model-scraper",
+  "name": "car-brand-model-scraper",
   "version": "1.0.0",
-  "description": "Get make and model from mobile.de",
+  "description": "Get brand and model from mobile.de",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

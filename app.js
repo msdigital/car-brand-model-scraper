@@ -4,7 +4,7 @@ const pup = require('puppeteer')
 
 var saveBrands = function(brands){
   const dataString = JSON.stringify(brands);
-  fs.writeFileSync('./' + config.EXPORT_FILENAME, dataString);
+  fs.writeFileSync('./export/' + config.EXPORT_FILENAME, dataString);
 }
 
 var scrapeModels = async function (page){

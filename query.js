@@ -57,12 +57,12 @@ var getModelQuery = function(data){
 
 async function run(){
   try {
-    const data = fs.readFileSync('./' + config.EXPORT_FILENAME).toString();
+    const data = fs.readFileSync('./export/' + config.EXPORT_FILENAME).toString();
     const json = JSON.parse(data);
 
     const qry = getBrandQuery(json) + getModelQuery(json);
 
-    fs.writeFileSync('./' + config.QUERY_FILENAME, qry);
+    fs.writeFileSync('./export/' + config.QUERY_FILENAME, qry);
   }
   catch (err) {
     console.log(err);
